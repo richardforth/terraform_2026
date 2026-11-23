@@ -1,3 +1,14 @@
+# Useful for ensuring terraform does not destroy 
+# a particular resource. Especially stateful ones
+# such as S3 buckets with real data in them,
+# RDS instance, or KMS key.
+# forces failure.
 lifecycle {
  prevent_destroy = true
+}
+
+# Required when using a launch configuration with
+# an Auto Scaling Group (asg)
+lifecycle {
+  create_before_destroy = true 
 }
