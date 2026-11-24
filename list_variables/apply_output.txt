@@ -1,0 +1,87 @@
+$ terraform apply
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # random_pet.fifth-pet will be created
+  + resource "random_pet" "fifth-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Dame"
+      + separator = "."
+    }
+
+  # random_pet.fourth-pet will be created
+  + resource "random_pet" "fourth-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Sir"
+      + separator = "."
+    }
+
+  # random_pet.other-pet will be created
+  + resource "random_pet" "other-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Madam"
+      + separator = "."
+    }
+
+  # random_pet.seventh-pet will be created
+  + resource "random_pet" "seventh-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Queen"
+      + separator = "."
+    }
+
+  # random_pet.sixth-pet will be created
+  + resource "random_pet" "sixth-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "King"
+      + separator = "."
+    }
+
+  # random_pet.that-pet will be created
+  + resource "random_pet" "that-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Mrs"
+      + separator = "."
+    }
+
+  # random_pet.this-pet will be created
+  + resource "random_pet" "this-pet" {
+      + id        = (known after apply)
+      + length    = 1
+      + prefix    = "Mr"
+      + separator = "."
+    }
+
+Plan: 7 to add, 0 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+random_pet.that-pet: Creating...
+random_pet.seventh-pet: Creating...
+random_pet.this-pet: Creating...
+random_pet.other-pet: Creating...
+random_pet.fifth-pet: Creating...
+random_pet.sixth-pet: Creating...
+random_pet.fourth-pet: Creating...
+random_pet.other-pet: Creation complete after 0s [id=Madam.coyote]
+random_pet.seventh-pet: Creation complete after 0s [id=Queen.grizzly]
+random_pet.fourth-pet: Creation complete after 0s [id=Sir.treefrog]
+random_pet.sixth-pet: Creation complete after 0s [id=King.bee]
+random_pet.that-pet: Creation complete after 0s [id=Mrs.kingfish]
+random_pet.this-pet: Creation complete after 0s [id=Mr.stag]
+random_pet.fifth-pet: Creation complete after 0s [id=Dame.haddock]
+
+Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
