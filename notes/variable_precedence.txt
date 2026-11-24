@@ -1,0 +1,26 @@
+Note, precedence is first ot last, with each subsequent check overriding the last.
+!!! it doesnt just take the first one !!!
+
+1. environment variables
+
+export TF_VAR_filename="/root/cats.txt"
+
+2. terraform.tfvars
+
+--- terraform.tfvars ---
+filename = "/root/pets.txt"
+
+3. *.auto.tfvars (alphabetical order)
+
+--- variable.auto.tfvars ---
+filename = "/root/mypet.txt"
+
+4. -var or -var-file (command-line flags)
+
+terraform apply -var "filename=/root/best-pet.txt"
+
+
+So in this case if all 4 elements were used in a single configuration directory, the filename
+that would take precedence would be /root/best-pet.txt.
+
+(to see this in action, see "variables/precedence" in this git repo)

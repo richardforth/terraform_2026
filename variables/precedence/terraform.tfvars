@@ -1,0 +1,1 @@
+filename = "C:\\Users\\richa\\Terraform\\variables\\precedence\\from_terrafrorm_dot_tfvars.txt"
