@@ -1,0 +1,5 @@
+Name          : bella
+Age           : 7
+Colour        : brown
+Food          : fish, chicken, turkey
+Favourite Pet : true
