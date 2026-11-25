@@ -5,3 +5,7 @@ terraform output public_ip
 $ terraform output
 pet-name = "Mrs.aphid"
 
+# Example of getting a specific output variable only (default is to display all)
+$ terraform output pet-name
+"Mrs.aphid"
+
