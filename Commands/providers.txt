@@ -1,3 +1,7 @@
 terrform providers
 
 # List all the providers used in the current configuration directory.
+
+terraform providers mirror /root/terraform/new_local_file
+
+# copy the current providers to a new configuration directory
