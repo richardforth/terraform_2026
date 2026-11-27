@@ -1,1 +1,27 @@
 terraform graph
+
+generates a text based graph visualizaton in a form at called dot, it can be passed into graphviz
+
+
+
+
+
+# to install on windows use:
+
+winget install Graphviz.Graphviz
+
+(You may need to add C:\Program Files\Graphviz\bin to your PATH afterwards)
+
+
+# to install on ubuntu use:
+
+$ apt update
+$ apt install graphviz -y
+
+
+
+
+
+To pass the graph into graphviz and produce an svg:
+
+$ terraform graph | dot -Tsvg > graph.svg
