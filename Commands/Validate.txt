@@ -1,0 +1,6 @@
+$ terraform validate
+Success! The configuration is valid.
+
+# validates the configuration in a directory.
+# If errors occur, it gives the file name and line number with
+#  a helpful hint on how to fix it.
