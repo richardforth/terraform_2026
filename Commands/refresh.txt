@@ -1,0 +1,8 @@
+terrform refresh
+
+# sync terraform state with the real infrastructure
+# does not change any infrastructure, but does make changes to the state file
+
+
+terraform plan -refresh-only	# Shows proposed state updates based on real infrastructure.
+terraform apply -refresh-only	# Applies those state updates without modifying infrastructure.
