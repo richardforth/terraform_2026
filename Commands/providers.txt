@@ -1,0 +1,3 @@
+terrform providers
+
+# List all the providers used in the current configuration directory.
