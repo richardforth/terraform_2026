@@ -1,0 +1,22 @@
+$ terraform fmt
+
+# formats configuration files into a canonical formats
+
+eg:
+
+from
+
+resource local_pet my-pet {
+  prefix = "Mrs"
+  separator = "."
+  length = "1"
+}
+
+
+to
+
+resource local_pet my-pet {
+  prefix    = "Mrs"
+  separator = "."
+  length    = "1"
+}
