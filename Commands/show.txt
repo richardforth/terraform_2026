@@ -1,5 +1,5 @@
 terraform show
-
-
-
 # prints out the current state of the infrastructure, as seen by terraform
+
+terraform show -json
+# print results in a json format
