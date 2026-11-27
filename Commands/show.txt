@@ -1,0 +1,5 @@
+terraform show
+
+
+
+# prints out the current state of the infrastructure, as seen by terraform
